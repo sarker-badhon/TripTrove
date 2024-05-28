@@ -5,7 +5,14 @@ import Tab from "@mui/material/Tab";
 import { TabContext, TabList, TabPanel } from "@mui/lab";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
-import { FormControl, InputLabel, Select, MenuItem, Button, Grid } from '@mui/material';
+import {
+  FormControl,
+  InputLabel,
+  Select,
+  MenuItem,
+  Button,
+  Grid,
+} from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import PersonPinCircleIcon from "@mui/icons-material/PersonPinCircle";
 
@@ -67,8 +74,6 @@ const Tabss = () => {
           </TabList>
         </Box>
         <div className="text-center ">
-        
-
           <TabPanel value="1">
             <Grid container spacing={1}>
               {[...Array(4)].map((_, index) => (
@@ -95,19 +100,11 @@ const Tabss = () => {
                 </Grid>
               ))}
             </Grid>
-            <Grid container justifyContent="center" sx={{ mt: 2 }}>
-              <Button
-                sx={{ minHeight: 60, minWidth: 200 }}
-                variant="contained"
-                endIcon={<SearchIcon />}
-              >
-                Search
-              </Button>
-            </Grid>
+           
           </TabPanel>
 
           <TabPanel value="2">
-            <Grid container >
+            <Grid container>
               {[...Array(4)].map((_, index) => (
                 <Grid item xs={12} sm={6} md={3} key={index}>
                   <FormControl fullWidth sx={{ m: 1, minWidth: 250 }}>
@@ -132,19 +129,11 @@ const Tabss = () => {
                 </Grid>
               ))}
             </Grid>
-            <Grid container justifyContent="center" sx={{ mt: 2 }}>
-              <Button
-                sx={{ minHeight: 60, minWidth: 200 }}
-                variant="contained"
-                endIcon={<SearchIcon />}
-              >
-                Search
-              </Button>
-            </Grid>
+         
           </TabPanel>
 
           <TabPanel value="3">
-            <Grid container >
+            <Grid container>
               {[...Array(4)].map((_, index) => (
                 <Grid item xs={12} sm={6} md={3} key={index}>
                   <FormControl fullWidth sx={{ m: 1, minWidth: 250 }}>
@@ -169,19 +158,11 @@ const Tabss = () => {
                 </Grid>
               ))}
             </Grid>
-            <Grid container justifyContent="center" sx={{ mt: 2 }}>
-              <Button
-                sx={{ minHeight: 60, minWidth: 200 }}
-                variant="contained"
-                endIcon={<SearchIcon />}
-              >
-                Search
-              </Button>
-            </Grid>
+           
           </TabPanel>
 
           <TabPanel value="4">
-            <Grid container >
+            <Grid container>
               {[...Array(4)].map((_, index) => (
                 <Grid item xs={12} sm={6} md={3} key={index}>
                   <FormControl fullWidth sx={{ m: 1, minWidth: 250 }}>
@@ -206,19 +187,11 @@ const Tabss = () => {
                 </Grid>
               ))}
             </Grid>
-            <Grid container justifyContent="center" sx={{ mt: 2 }}>
-              <Button
-                sx={{ minHeight: 60, minWidth: 200 }}
-                variant="contained"
-                endIcon={<SearchIcon />}
-              >
-                Search
-              </Button>
-            </Grid>
+            
           </TabPanel>
 
           <TabPanel value="5">
-            <Grid container >
+            <Grid container>
               {[...Array(4)].map((_, index) => (
                 <Grid item xs={12} sm={6} md={3} key={index}>
                   <FormControl fullWidth sx={{ m: 1, minWidth: 250 }}>
@@ -243,19 +216,15 @@ const Tabss = () => {
                 </Grid>
               ))}
             </Grid>
-            <Grid container justifyContent="center" sx={{ mt: 2 }}>
-              <Button
-                sx={{ minHeight: 60, minWidth: 200 }}
-                variant="contained"
-                endIcon={<SearchIcon />}
-              >
-                Search
-              </Button>
-            </Grid>
+         
           </TabPanel>
-          
         </div>
       </TabContext>
+      <Grid container justifyContent="center" sx={{ }}>
+        <button className="bg-red-400 text-white px-10 py-4 rounded mb-4">
+          Search Now <SearchIcon />
+        </button>
+      </Grid>
     </div>
   );
 };

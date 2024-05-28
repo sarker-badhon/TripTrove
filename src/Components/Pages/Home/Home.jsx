@@ -4,6 +4,8 @@ import Tabs from '../Tabs/Tabss';
 import TravelCard from '../TravelCard/TravelCard';
 import OffersCard from '../OffersCard/OffersCard';
 import VisaProces from '../VisaProces/VisaProces';
+import LetsTravel from '../LetsTravel/LetsTravel';
+import TourChoose from '../TourChoose/TourChoose';
 
 const Home = () => {
     return (
@@ -12,6 +14,9 @@ const Home = () => {
             <Tabs></Tabs>
             <TravelCard/>
             <VisaProces/>
+            <LetsTravel/>
+            <TourChoose/>
+            
             <OffersCard/>
         </div>
     );

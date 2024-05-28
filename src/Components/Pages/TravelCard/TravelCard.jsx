@@ -9,8 +9,9 @@ import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import DirectionsBoatFilledIcon from "@mui/icons-material/DirectionsBoatFilled";
 import AirportShuttleIcon from "@mui/icons-material/AirportShuttle";
 import DirectionsSubwayFilledIcon from "@mui/icons-material/DirectionsSubwayFilled";
-import LocalShippingIcon from '@mui/icons-material/LocalShipping';
+import LocalShippingIcon from "@mui/icons-material/LocalShipping";
 import { Rating } from "@mui/material";
+import SearchIcon from "@mui/icons-material/Search";
 
 const TravelCard = () => {
   const [value, setValue] = React.useState("1");
@@ -34,14 +35,14 @@ const TravelCard = () => {
             }}
           >
             <TabList onChange={handleChange} aria-label="lab API tabs example">
-              <Tab label="Tour Package" value="1" />
+              <Tab sx={{fontSize:2}} label="Tour Package" value="1" />
               <Tab label="Hotel" value="2" />
               <Tab label="Transports" value="3" />
             </TabList>
           </Box>
           <TabPanel value="1">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-2 md:mx-20">
-              <div className="card card-compact w-full bg-base-100 shadow-xl p-4">
+              <div className="card card-compact w-full bg-base-100 shadow p-4">
                 <figure>
                   <img
                     src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*SGstW30w3jQpF2Wc5Qmcnw.jpeg"
@@ -66,15 +67,15 @@ const TravelCard = () => {
                       <p>TAXES INCL/PERS</p>
                     </div>
                     <div>
-                      <button className="btn btn-primary">
-                        Book A Trip <FlightIcon />
+                    <button className="bg-red-400 text-white  rounded px-4 py-2">
+                      Book A Trip <FlightIcon />
                       </button>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div className="card card-compact w-full bg-base-100 shadow-xl p-4">
+              <div className="card card-compact w-full bg-base-100 shadow p-4">
                 <figure>
                   <img
                     src="https://img.jakpost.net/c/2016/09/06/2016_09_06_11313_1473161249._large.jpg"
@@ -99,14 +100,14 @@ const TravelCard = () => {
                       <p>TAXES INCL/PERS</p>
                     </div>
                     <div>
-                      <button className="btn btn-primary">
-                        Book A Trip <FlightIcon />
+                    <button className="bg-red-400 text-white  rounded px-4 py-2">
+                      Book A Trip <FlightIcon />
                       </button>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="card card-compact w-full bg-base-100 shadow-xl p-4">
+              <div className="card card-compact w-full bg-base-100 shadow p-4">
                 <figure>
                   <img src="https://i.ibb.co/5FtxMRS/e0.jpg" alt="" />
                 </figure>
@@ -128,14 +129,14 @@ const TravelCard = () => {
                       <p>TAXES INCL/PERS</p>
                     </div>
                     <div>
-                      <button className="btn btn-primary">
-                        Book A Trip <FlightIcon />
+                    <button className="bg-red-400 text-white  rounded px-4 py-2">
+                      Book A Trip <FlightIcon />
                       </button>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="card card-compact w-full bg-base-100 shadow-xl p-4">
+              <div className="card card-compact w-full bg-base-100 shadow p-4">
                 <figure>
                   <img
                     src="https://img.jakpost.net/c/2016/09/06/2016_09_06_11313_1473161249._large.jpg"
@@ -160,14 +161,14 @@ const TravelCard = () => {
                       <p>TAXES INCL/PERS</p>
                     </div>
                     <div>
-                      <button className="btn btn-primary">
-                        Book A Trip <FlightIcon />
+                    <button className="bg-red-400 text-white  rounded px-4 py-2">
+                      Book A Trip <FlightIcon />
                       </button>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="card card-compact w-full bg-base-100 shadow-xl p-4">
+              <div className="card card-compact w-full bg-base-100 shadow p-4">
                 <figure>
                   <img src="https://i.ibb.co/5FtxMRS/e0.jpg" alt="" />
                 </figure>
@@ -189,14 +190,14 @@ const TravelCard = () => {
                       <p>TAXES INCL/PERS</p>
                     </div>
                     <div>
-                      <button className="btn btn-primary">
-                        Book A Trip <FlightIcon />
+                    <button className="bg-red-400 text-white  rounded px-4 py-2">
+                      Book A Trip <FlightIcon />
                       </button>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="card card-compact w-full bg-base-100 shadow-xl p-4">
+              <div className="card card-compact w-full bg-base-100 shadow p-4">
                 <figure>
                   <img
                     src="https://img.jakpost.net/c/2016/09/06/2016_09_06_11313_1473161249._large.jpg"
@@ -221,8 +222,8 @@ const TravelCard = () => {
                       <p>TAXES INCL/PERS</p>
                     </div>
                     <div>
-                      <button className="btn btn-primary">
-                        Book A Trip <FlightIcon />
+                      <button className="bg-red-400 text-white  rounded px-4 py-2">
+                      Book A Trip <FlightIcon />
                       </button>
                     </div>
                   </div>
@@ -257,8 +258,8 @@ const TravelCard = () => {
                       <p>TAXES INCL/PERS</p>
                     </div>
                     <div>
-                      <button className="btn btn-primary">
-                        Book A Trip <FlightIcon />
+                    <button className="bg-red-400 text-white  rounded px-4 py-2">
+                      Book A Trip <FlightIcon />
                       </button>
                     </div>
                   </div>
@@ -290,13 +291,14 @@ const TravelCard = () => {
                       <p>TAXES INCL/PERS</p>
                     </div>
                     <div>
-                      <button className="btn btn-primary">
-                        Book A Trip <FlightIcon />
+                    <button className="bg-red-400 text-white  rounded px-4 py-2">
+                      Book A Trip <FlightIcon />
                       </button>
                     </div>
                   </div>
                 </div>
               </div>
+
               <div className="card card-compact w-full bg-base-100 shadow-xl ">
                 <figure>
                   <img src="https://i.ibb.co/5FtxMRS/e0.jpg" alt="" />
@@ -319,13 +321,14 @@ const TravelCard = () => {
                       <p>TAXES INCL/PERS</p>
                     </div>
                     <div>
-                      <button className="btn btn-primary">
-                        Book A Trip <FlightIcon />
+                     <button className="bg-red-400 text-white  rounded px-4 py-2">
+                      Book A Trip <FlightIcon />
                       </button>
                     </div>
                   </div>
                 </div>
               </div>
+
               <div className="card card-compact w-full bg-base-100 shadow-xl ">
                 <figure>
                   <img
@@ -351,13 +354,14 @@ const TravelCard = () => {
                       <p>TAXES INCL/PERS</p>
                     </div>
                     <div>
-                      <button className="btn btn-primary">
-                        Book A Trip <FlightIcon />
+                     <button className="bg-red-400 text-white  rounded px-4 py-2">
+                      Book A Trip <FlightIcon />
                       </button>
                     </div>
                   </div>
                 </div>
               </div>
+
               <div className="card card-compact w-full bg-base-100 shadow-xl ">
                 <figure>
                   <img src="https://i.ibb.co/5FtxMRS/e0.jpg" alt="" />
@@ -380,13 +384,14 @@ const TravelCard = () => {
                       <p>TAXES INCL/PERS</p>
                     </div>
                     <div>
-                      <button className="btn btn-primary">
-                        Book A Trip <FlightIcon />
+                      <button className="bg-red-400 text-white  rounded px-4 py-2">
+                      Book A Trip <FlightIcon />
                       </button>
                     </div>
                   </div>
                 </div>
               </div>
+
               <div className="card card-compact w-full bg-base-100 shadow-xl ">
                 <figure>
                   <img
@@ -412,13 +417,14 @@ const TravelCard = () => {
                       <p>TAXES INCL/PERS</p>
                     </div>
                     <div>
-                      <button className="btn btn-primary">
-                        Book A Trip <FlightIcon />
+                     <button className="bg-red-400 text-white  rounded px-4 py-2">
+                      Book A Trip <FlightIcon />
                       </button>
                     </div>
                   </div>
                 </div>
               </div>
+
             </div>
           </TabPanel>
           <TabPanel value="3">
@@ -432,30 +438,39 @@ const TravelCard = () => {
                 </figure>
                 <div className="card-body">
                   <h2 className="text-xl font-semibold">
-                  Athens To Istanbul, Journey Through History’s Heart
+                    Athens To Istanbul, Journey Through History’s Heart
                   </h2>
                   <div class="">
                     <p class="">Available Transport :</p>
                     <div className="flex mt-3">
-                       
-                    
-                      <p><LocalShippingIcon/></p>
-                      <p><DirectionsBoatFilledIcon/></p>
-                      <p><AirportShuttleIcon/></p>
-                      <p><DirectionsSubwayFilledIcon/></p>
-                      
+                      <p>
+                        <LocalShippingIcon />
+                      </p>
+                      <p>
+                        <DirectionsBoatFilledIcon />
+                      </p>
+                      <p>
+                        <AirportShuttleIcon />
+                      </p>
+                      <p>
+                        <DirectionsSubwayFilledIcon />
+                      </p>
                     </div>
                   </div>
                   <div className="divider"></div>
                   <div className="flex justify-between items-center text-sm ">
-                    
                     <div>
-                      <button className="btn btn-primary">
-                      View Details 
+                     
+                      <button className="bg-red-400 text-white  rounded px-4 py-3">
+                      View Details
                       </button>
                     </div>
                     <div>
-                    <Rating name="half-rating" defaultValue={2.5} precision={0.5} />
+                      <Rating
+                        name="half-rating"
+                        defaultValue={2.5}
+                        precision={0.5}
+                      />
                     </div>
                   </div>
                 </div>
@@ -469,30 +484,38 @@ const TravelCard = () => {
                 </figure>
                 <div className="card-body">
                   <h2 className="text-xl font-semibold">
-                  Athens To Istanbul, Journey Through History’s Heart
+                    Athens To Istanbul, Journey Through History’s Heart
                   </h2>
                   <div class="">
                     <p class="">Available Transport :</p>
                     <div className="flex mt-3">
-                       
-                    
-                      <p><LocalShippingIcon/></p>
-                      <p><DirectionsBoatFilledIcon/></p>
-                      <p><AirportShuttleIcon/></p>
-                      <p><DirectionsSubwayFilledIcon/></p>
-                      
+                      <p>
+                        <LocalShippingIcon />
+                      </p>
+                      <p>
+                        <DirectionsBoatFilledIcon />
+                      </p>
+                      <p>
+                        <AirportShuttleIcon />
+                      </p>
+                      <p>
+                        <DirectionsSubwayFilledIcon />
+                      </p>
                     </div>
                   </div>
                   <div className="divider"></div>
                   <div className="flex justify-between items-center text-sm ">
-                    
                     <div>
-                      <button className="btn btn-primary">
-                      View Details 
+                     <button className="bg-red-400 text-white  rounded px-4 py-3">
+                      View Details
                       </button>
                     </div>
                     <div>
-                    <Rating name="half-rating" defaultValue={2.5} precision={0.5} />
+                      <Rating
+                        name="half-rating"
+                        defaultValue={2.5}
+                        precision={0.5}
+                      />
                     </div>
                   </div>
                 </div>
@@ -506,30 +529,38 @@ const TravelCard = () => {
                 </figure>
                 <div className="card-body">
                   <h2 className="text-xl font-semibold">
-                  Athens To Istanbul, Journey Through History’s Heart
+                    Athens To Istanbul, Journey Through History’s Heart
                   </h2>
                   <div class="">
                     <p class="">Available Transport :</p>
                     <div className="flex mt-3">
-                       
-                    
-                      <p><LocalShippingIcon/></p>
-                      <p><DirectionsBoatFilledIcon/></p>
-                      <p><AirportShuttleIcon/></p>
-                      <p><DirectionsSubwayFilledIcon/></p>
-                      
+                      <p>
+                        <LocalShippingIcon />
+                      </p>
+                      <p>
+                        <DirectionsBoatFilledIcon />
+                      </p>
+                      <p>
+                        <AirportShuttleIcon />
+                      </p>
+                      <p>
+                        <DirectionsSubwayFilledIcon />
+                      </p>
                     </div>
                   </div>
                   <div className="divider"></div>
                   <div className="flex justify-between items-center text-sm ">
-                    
                     <div>
-                      <button className="btn btn-primary">
-                      View Details 
+                    <button className="bg-red-400 text-white  rounded px-4 py-3">
+                      View Details
                       </button>
                     </div>
                     <div>
-                    <Rating name="half-rating" defaultValue={2.5} precision={0.5} />
+                      <Rating
+                        name="half-rating"
+                        defaultValue={2.5}
+                        precision={0.5}
+                      />
                     </div>
                   </div>
                 </div>
@@ -543,30 +574,38 @@ const TravelCard = () => {
                 </figure>
                 <div className="card-body">
                   <h2 className="text-xl font-semibold">
-                  Athens To Istanbul, Journey Through History’s Heart
+                    Athens To Istanbul, Journey Through History’s Heart
                   </h2>
                   <div class="">
                     <p class="">Available Transport :</p>
                     <div className="flex mt-3">
-                       
-                    
-                      <p><LocalShippingIcon/></p>
-                      <p><DirectionsBoatFilledIcon/></p>
-                      <p><AirportShuttleIcon/></p>
-                      <p><DirectionsSubwayFilledIcon/></p>
-                      
+                      <p>
+                        <LocalShippingIcon />
+                      </p>
+                      <p>
+                        <DirectionsBoatFilledIcon />
+                      </p>
+                      <p>
+                        <AirportShuttleIcon />
+                      </p>
+                      <p>
+                        <DirectionsSubwayFilledIcon />
+                      </p>
                     </div>
                   </div>
                   <div className="divider"></div>
                   <div className="flex justify-between items-center text-sm ">
-                    
                     <div>
-                      <button className="btn btn-primary">
-                      View Details 
+                    <button className="bg-red-400 text-white  rounded px-4 py-3">
+                      View Details
                       </button>
                     </div>
                     <div>
-                    <Rating name="half-rating" defaultValue={2.5} precision={0.5} />
+                      <Rating
+                        name="half-rating"
+                        defaultValue={2.5}
+                        precision={0.5}
+                      />
                     </div>
                   </div>
                 </div>
@@ -580,30 +619,38 @@ const TravelCard = () => {
                 </figure>
                 <div className="card-body">
                   <h2 className="text-xl font-semibold">
-                  Athens To Istanbul, Journey Through History’s Heart
+                    Athens To Istanbul, Journey Through History’s Heart
                   </h2>
                   <div class="">
                     <p class="">Available Transport :</p>
                     <div className="flex mt-3">
-                       
-                    
-                      <p><LocalShippingIcon/></p>
-                      <p><DirectionsBoatFilledIcon/></p>
-                      <p><AirportShuttleIcon/></p>
-                      <p><DirectionsSubwayFilledIcon/></p>
-                      
+                      <p>
+                        <LocalShippingIcon />
+                      </p>
+                      <p>
+                        <DirectionsBoatFilledIcon />
+                      </p>
+                      <p>
+                        <AirportShuttleIcon />
+                      </p>
+                      <p>
+                        <DirectionsSubwayFilledIcon />
+                      </p>
                     </div>
                   </div>
                   <div className="divider"></div>
                   <div className="flex justify-between items-center text-sm ">
-                    
                     <div>
-                      <button className="btn btn-primary">
-                      View Details 
+                    <button className="bg-red-400 text-white  rounded px-4 py-3">
+                      View Details
                       </button>
                     </div>
                     <div>
-                    <Rating name="half-rating" defaultValue={2.5} precision={0.5} />
+                      <Rating
+                        name="half-rating"
+                        defaultValue={2.5}
+                        precision={0.5}
+                      />
                     </div>
                   </div>
                 </div>
@@ -617,37 +664,42 @@ const TravelCard = () => {
                 </figure>
                 <div className="card-body">
                   <h2 className="text-xl font-semibold">
-                  Athens To Istanbul, Journey Through History’s Heart
+                    Athens To Istanbul, Journey Through History’s Heart
                   </h2>
                   <div class="">
                     <p class="">Available Transport :</p>
                     <div className="flex mt-3">
-                       
-                    
-                      <p><LocalShippingIcon/></p>
-                      <p><DirectionsBoatFilledIcon/></p>
-                      <p><AirportShuttleIcon/></p>
-                      <p><DirectionsSubwayFilledIcon/></p>
-                      
+                      <p>
+                        <LocalShippingIcon />
+                      </p>
+                      <p>
+                        <DirectionsBoatFilledIcon />
+                      </p>
+                      <p>
+                        <AirportShuttleIcon />
+                      </p>
+                      <p>
+                        <DirectionsSubwayFilledIcon />
+                      </p>
                     </div>
                   </div>
                   <div className="divider"></div>
                   <div className="flex justify-between items-center text-sm ">
-                    
                     <div>
-                      <button className="btn btn-primary">
-                      View Details 
+                    <button className="bg-red-400 text-white  rounded px-4 py-3">
+                      View Details
                       </button>
                     </div>
                     <div>
-                    <Rating name="half-rating" defaultValue={2.5} precision={0.5} />
+                      <Rating
+                        name="half-rating"
+                        defaultValue={2.5}
+                        precision={0.5}
+                      />
                     </div>
                   </div>
                 </div>
               </div>
-              
-
-             
             </div>
           </TabPanel>
         </TabContext>
